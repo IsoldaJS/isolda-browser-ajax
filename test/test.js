@@ -12,7 +12,6 @@ describe('Request', function () {
         assert.ok(false, "This call shouldn't succeed");
       },
       error: function (error) {
-        console.log(error);
         assert.equal(error.status, 400);
         assert.ok(error.payload.error.message.match(/Required parameter/));
         done();
