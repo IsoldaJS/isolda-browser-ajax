@@ -1,0 +1,30 @@
+{
+  "name": "@isolda/browser-ajax",
+  "version": "1.0.0",
+  "author": "Eugene Mirotin <emirotin@gmail.com>",
+  "description": "A browser-request wrapper suitable as Backbone.ajax drop-in replacement",
+  "keywords": [
+    "request",
+    "http",
+    "browser",
+    "browserify"
+  ],
+  "homepage": "https://github.com/IsoldaJS/isolda-browser-ajax",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IsoldaJS/isolda-browser-ajax"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start"
+  },
+  "dependencies": {
+    "browser-request": "^0.3.3"
+  },
+  "devDependencies": {
+    "karma": "^0.12.32",
+    "karma-browserify": "^4.2.1",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^2.2.5"
+  }
+}
