@@ -52,12 +52,9 @@ module.exports = function(config) {
       },
       PhantomJS_noSecurity: {
         base: 'PhantomJS',
-        flags: ['--web-security=no'],
-        options: {
-          settings: {
-            webSecurityEnabled: false
-          }
-        }
+        flags: [
+          '--ignore-ssl-errors=true'
+        ]
       }
     }
   });
