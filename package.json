@@ -1,5 +1,5 @@
 {
-  "name": "@isolda/browser-ajax",
+  "name": "@isoldajs/browser-ajax",
   "version": "1.0.0",
   "author": "Eugene Mirotin <emirotin@gmail.com>",
   "description": "A browser-request wrapper suitable as Backbone.ajax drop-in replacement",
