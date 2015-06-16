@@ -14,16 +14,21 @@
     "url": "git://github.com/IsoldaJS/isolda-browser-ajax"
   },
   "scripts": {
-    "test": "./node_modules/karma/bin/karma start"
+    "test": "./node_modules/karma/bin/karma start",
+    "bundle": "browserify --standalone ajax index.js -o dist/isolda-browser-ajax.js",
+    "minify": "uglifyjs dist/isolda-browser-ajax.js --compress dead_code=true,unsafe=true,unused=true --mangle -o dist/isolda-browser-ajax.min.js",
+    "build": "npm run bundle && npm run minify"
   },
   "dependencies": {
     "browser-request": "^0.3.3"
   },
   "devDependencies": {
+    "browserify": "^10.2.4",
     "karma": "^0.12.32",
     "karma-browserify": "^4.2.1",
     "karma-mocha": "^0.1.10",
     "karma-phantomjs-launcher": "^0.1.4",
-    "mocha": "^2.2.5"
+    "mocha": "^2.2.5",
+    "uglify-js": "^2.4.23"
   }
 }
