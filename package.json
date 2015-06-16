@@ -6,8 +6,7 @@
   "keywords": [
     "request",
     "http",
-    "browser",
-    "browserify"
+    "browser"
   ],
   "homepage": "https://github.com/IsoldaJS/isolda-browser-ajax",
   "repository": {

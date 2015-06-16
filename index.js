@@ -61,7 +61,7 @@ module.exports = function (options) {
 
   requestHelper(newOptions, function (body) {
     typeof options.success === "function" && options.success(body);
-  }, function(err) {
+  }, function (err) {
     typeof options.error === "function" && options.error(err);
   });
 };
